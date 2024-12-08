@@ -1,0 +1,70 @@
+body {
+    background-color: #6bcdd8;
+}
+a:visited {
+    color: #222;
+}
+mark {
+    color: #222;
+    background: #f7941e;
+}
+li {
+    color: rgb(17, 16, 17);
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    color: white;
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    border: 0px solid #f2ace5;
+    padding: 0px;
+    margin: 0px;
+}
+#contentWrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+ul {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Nanum Myeongjo', serif;
+}
+p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Nanum Myeongjo', serif;
+}
+h2,
+h3,
+llm {
+    font-size: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+span {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+b {
+    color: #bc1717;
+}
+h3 {
+    text-align: center;
+    white-space: nowrap;
+}
+.square {
+    list-style: square;
+    padding-top: 10px;
+}
+ol li::before {
+    content: attr(data-icon);
+}
+li {
+    align-items: start;
+}

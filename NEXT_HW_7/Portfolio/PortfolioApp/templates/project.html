@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-coding.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <style>
+            .fontTest {
+                font-family: 'NanumGothicCodingLigature';
+                font-family: 'NanumGothicCodingLigatureBold';
+                font-family: 'NanumGothicCoding';
+                font-family: 'NanumGothicCodingBold';
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="{% static 'project.css' %}" />
+        <title>Projects</title>
+    </head>
+    <body style="background-color: rgb(118, 171, 174)">
+        <div class="totalbox">
+            <div class="text1" style="color: whitesmoke">
+                <h1 class="projects_title" style="color: whitesmoke">Projects</h1>
+            </div>
+            <div class="text2">
+                <h4 class="NEXT" style="color: lemonchiffon">
+                    고려대학교 경영대학 소프트웨어창업학회 NEXT에서 진행한 프로젝트 목록입니다.
+                </h4>
+                <div class="photobox1">
+                    <img class="next1" src="static/image/nexthw1.png" />
+                    <img class="next2" src="static/image/nexthw2.png" />
+                </div>
+            </div>
+            <div class="text3">
+                <h4 class="AIKU" style="color: lemonchiffon">
+                    고려대학교 정보대학 딥러닝학회 AIKU에서 진행한 프로젝트 목록입니다.
+                </h4>
+                <div class="photobox2">
+                    <img src="static/image/aiku1.png" />
+                    <img src="static/image/aiku2.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .warn {
+                color: red;
+                font-size: 1.2em; /* 예시 폰트 크기 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="warn">본인의 글만 삭제하는 민주시민이 됩시다.</div>
+        {{ error }}
+        <a href="{% url 'home' %}">돌아가기</a>
+    </body>
+</html>

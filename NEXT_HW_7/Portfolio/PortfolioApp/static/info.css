@@ -1,0 +1,96 @@
+.total_box {
+    display: flex;
+    flex-direction: column;
+}
+.song-myung-regular {
+    font-family: 'Song Myung', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.source-code-pro-uniquifier {
+    font-family: 'Source Code Pro', monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.title {
+    font-family: 'Song Myung', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.upper1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+.code_icon {
+    margin-top: 100;
+    align-self: center;
+}
+.title {
+    text-align: center;
+}
+.sniffet {
+    display: flex;
+    align-self: center;
+}
+.sogae {
+    display: flex;
+    align-self: center;
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+}
+.emoji {
+    display: flex;
+    align-self: center;
+    font-size: 40px;
+}
+.upper2 {
+    display: flex;
+    justify-content: center;
+}
+.github_button,
+.linkedin_button {
+    display: flex;
+    font-family: 'Source Code Pro';
+    color: whitesmoke;
+}
+
+.github_button {
+    display: flex;
+    margin-right: 20px;
+}
+.linkedin_button {
+    display: flex;
+    margin-left: 20px;
+}
+.upper3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.menu1,
+.menu2,
+.menu3 {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+.menu1 {
+    display: flex;
+    color: palegreen;
+    font-weight: bold;
+}
+.menu2 {
+    display: flex;
+    color: palegreen;
+    font-weight: bold;
+}
+.menu3 {
+    display: flex;
+    color: palegreen;
+    font-weight: bold;
+}

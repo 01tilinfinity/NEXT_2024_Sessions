@@ -1,0 +1,32 @@
+body {
+    background-color: darkslategray;
+}
+.song-myung-regular {
+    font-family: 'Song Myung', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'Song Myung', serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    align-items: center;
+    color: whitesmoke;
+}
+.subcontainer {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    margin: 0 5px;
+    margin-top: 30px;
+}

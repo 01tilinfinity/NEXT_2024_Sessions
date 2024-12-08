@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'category.css' %}" />
+{% endblock css %}{% block title %}{% endblock title %} {% block content %}
+<div class="container">
+    <div class="categoryname">
+        {{ category_name }}
+        <h5 class="post_count">총 게시글 수: {{ post_count }}</h5>
+    </div>
+    <br />
+    <br />
+    <div>
+        <ul style="list-style-type: square">
+            {% for article in articles %}
+            <li class="lists">
+                <a class="text_style" href="{% url 'detail' article.id %}"> 글 제목 : {{ article.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a class="text_list" href="{% url 'list' %}">글 목록으로 돌아가기~!~!</a>
+</div>
+{% endblock content %}

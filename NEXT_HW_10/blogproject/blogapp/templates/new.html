@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block css %}{% load static %}<link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'nnew.css' %}"
+/>{% endblock css %} {% block title %}<title>New post</title>{% endblock title %} {% block content %}
+<div class="container">
+    <h2 class="newpost">새 글 작성</h2>
+    <form action="/new" method="post">
+        {% csrf_token %}
+        <div class="temp">카테고리</div>
+        <select id="category" name="category">
+            <option value="hobby">취미🤪</option>
+            <option value="food">음식🍔</option>
+            <option value="programming">프로그래밍💻</option>
+        </select>
+        <div>
+            <div class="temp">글 제목</div>
+            <input type="text" name="title" />
+        </div>
+        <div>
+            <div class="temp">글 내용</div>
+            <textarea name="content" cols="100" rows="10"></textarea>
+        </div>
+        <button class="button" type="submit">작성 완료우~</button>
+    </form>
+</div>
+{% endblock content %}

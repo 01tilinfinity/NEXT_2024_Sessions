@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" />
+        <title>Detail page</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'detail_2.css' %}" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="posttitle">글 제목 : {{ article.title }}</div>
+            <br />
+            <br />
+            <div class="posttime">작성 시각 : {{ article.created_at }}</div>
+            <br />
+            <br />
+            <div class="content">글 내용 : {{ article.content }}</div>
+            <br />
+            <a class="listname" href="{% url 'list' %}">글 목록</a>
+        </div>
+    </body>
+</html>

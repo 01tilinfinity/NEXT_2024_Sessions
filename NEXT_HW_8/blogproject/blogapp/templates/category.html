@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{% static 'category.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" />
+        <title>Category</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="categoryname">
+                {{ category_name }}
+                <h5 class="post_count">총 게시글 수: {{ post_count }}</h5>
+            </div>
+            <div>
+                <ul style="list-style-type: square">
+                    {% for article in articles %}
+                    <li class="lists">
+                        <a class="text_style" href="{% url 'detail' article.id %}"> 글 제목 : {{ article.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a class="text_list" href="{% url 'list' %}">글 목록으로 돌아가기~!~!</a>
+        </div>
+    </body>
+</html>

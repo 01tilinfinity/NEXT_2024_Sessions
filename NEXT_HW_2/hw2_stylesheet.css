@@ -1,0 +1,247 @@
+.statusbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.status_left {
+    display: flex;
+}
+.status_right {
+    display: flex;
+}
+.bi {
+    margin-right: 10px;
+}
+.bii {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.time {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.dots,
+.bell {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.middlebar {
+    display: flex;
+    justify-content: space-between;
+}
+.mid2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    margin-top: 35px;
+}
+.name {
+    font-weight: bold;
+    flex-grow: 2;
+    margin-right: -50px;
+    font-size: 30px;
+}
+.bluecheck {
+    width: 35px;
+    height: 35px;
+    margin-left: 50px;
+}
+.profile_box {
+    display: flex;
+}
+.p1 {
+    display: flex;
+}
+.ldh_profile {
+    border-radius: 50%;
+    margin-left: 80px;
+}
+.follower_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.f1,
+.f2,
+.f3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px;
+}
+.f1 {
+    margin-left: 180px;
+}
+.posts {
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.posts2 {
+    font-size: 36px;
+}
+.followers,
+.following {
+    font-size: 40px;
+    font-weight: bold;
+}
+.followers2 {
+    margin-left: 15px;
+}
+.followers2,
+.following2 {
+    font-size: 36px;
+}
+.following {
+    margin-left: 30px;
+}
+.name_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.ldh_name,
+.ldh_birth,
+.emoji {
+    margin-left: 50px;
+    font-size: 40px;
+}
+.friends_profile {
+    margin-left: 30px;
+}
+.ldh_name {
+    font-weight: bold;
+}
+.friend_box {
+    display: flex;
+    overflow-x: auto;
+}
+p,
+b {
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.temp2 {
+    display: flex;
+    margin-top: 25px;
+}
+.temp1 {
+    display: flex;
+}
+.temp_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card1 {
+    background-color: dimgray;
+    border-radius: 10%;
+    width: 40%;
+    height: auto;
+    position: relative;
+    margin-left: 15px;
+}
+b1 {
+    font-size: 40px;
+    color: white;
+    margin-left: 160px;
+}
+.card2 {
+    background-color: dimgray;
+    border-radius: 10%;
+    width: 40%;
+    height: 100px;
+    margin-right: 5px;
+    margin-left: -10px;
+}
+b2 {
+    font-size: 40px;
+    color: white;
+    margin-left: 160px;
+}
+.card3 {
+    background-color: dimgray;
+    border-radius: 10%;
+    width: 10%;
+    height: auto;
+    margin-left: -20px;
+}
+.biperson {
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.card1,
+.card2,
+.card3 {
+    align-items: center;
+}
+.mango {
+    margin-top: 25px;
+}
+.icons {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.icon1 {
+    display: flex;
+}
+.icon2 {
+    display: flex;
+}
+.video_icon {
+    color: dimgray;
+}
+.icon3 {
+    display: flex;
+}
+.selected {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.slimbox {
+    background-color: white;
+    width: 389px;
+    height: 5px;
+}
+.bottom_icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.profile_icon {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.real_bottom {
+    display: flex;
+    margin-top: 10px;
+}
+.reddot {
+    background-color: orangered;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 110px;
+}
+.reddot2 {
+    background-color: orangered;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 930px;
+}
