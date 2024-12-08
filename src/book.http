@@ -1,0 +1,30 @@
+@server = http://localhost:3000
+
+#게시글 조회
+GET {{server}}/book
+
+###게시글 생성
+POST {{server}}/book
+Content-Type: application/json
+
+{
+    "title": "수북한 다리털 이야기",
+    "author": "김풍",
+    "isAvailable": true
+}
+
+### 특정 게시글 조회
+GET {{server}}/book/1
+
+### 게시글 삭제
+DELETE {{server}}/book/1
+
+### 게시글 수정
+PUT {{server}}/book/1
+Content-Type: application/json
+
+{
+    "title": "민머리가 되는 법",
+    "author": "주호민",
+    "isAvailable": true
+}
