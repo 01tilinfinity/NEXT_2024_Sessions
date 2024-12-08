@@ -1,0 +1,56 @@
+body {
+    background-color: darkslategray;
+}
+.poppins-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.song-myung-regular {
+    font-family: 'Song Myung', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.largest_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-self: center;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+.list_container {
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    position: inherit;
+    margin-top: 20px;
+}
+.todotext {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+.todotitle {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: normal;
+    align-items: center;
+}
+.temp1 {
+    display: flex;
+    font-family: 'Song Myung', serif;
+    color: whitesmoke;
+    font-size: 20px;
+}
+a:link {
+    color: darkseagreen;
+}
+a:visited {
+    color: indianred;
+}

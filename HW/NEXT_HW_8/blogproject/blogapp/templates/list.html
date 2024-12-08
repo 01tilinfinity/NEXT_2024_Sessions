@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" />
+        <title>Post list</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h2 class="postlist">Post List</h2>
+                <ul style="list-style-type: square">
+                    {% for article in articles %}
+                    <li class="titles"><a href="{% url 'detail' article.id %}">{{article.title}}</a></li>
+                    {% endfor %}
+                </ul>
+                <h3 class="new"><a href="{% url 'new' %}">새 글 쓰러가기</a></h3>
+                <div class="category">카테고리</div>
+                <ul style="list-style-type: square">
+                    <li class="cnt">
+                        <a class="titlename" href="{% url 'category' 'hobby' %}">취미🤪</a> <br />게시글 수 : {{ hp }}
+                    </li>
+                    <br />
+                    <li class="cnt">
+                        <a class="titlename" href="{% url 'category' 'food' %}">맛집🍔</a> <br />게시글 수 : {{ fp }}
+                    </li>
+                    <br />
+                    <li class="cnt">
+                        <a class="titlename" href="{% url 'category' 'programming' %}">프로그래밍💻</a> <br />게시글 수
+                        : {{ pc }}
+                    </li>
+                    <br />
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

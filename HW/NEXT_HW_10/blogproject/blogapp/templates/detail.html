@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'detail_3.css' %}" />
+{% endblock %} {% block title %}
+<title>Detail page</title>
+{% endblock %} {% block content %}
+<div class="container">
+    <div class="posttitle">글 제목 : {{ article.title }}</div>
+    <br />
+    <br />
+    <div class="posttime">작성 시각 : {{ article.created_at }}</div>
+    <br />
+    <br />
+    <div class="content">글 내용 : {{ article.content }}</div>
+    <br />
+    <h5 class="temp_comment">{{ article.comments.all|length }}&nbsp;개의 댓글 보기</h5>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="comments" placeholder="댓글 입력..." />
+        <input type="hidden" name="parent_comment_id" value="{{ comment.id }}" />
+        <button type="submit" class="btn btn-info">댓글 작성</button>
+    </form>
+    <br />
+    <br />{% for comment in article.comments.all %} {% if not comment.parent_comment %}
+    <!--parent가 없는(자기 자신이 parent) 경우에만 출력-->
+    <li class="comment">{{ comment.comment_body }}</li>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="parent_comment_id" value="{{ comment.id }}" />
+        <input type="text" name="comments" placeholder="대댓글 입력..." />
+        <button type="submit" class="btn btn-info">답글 작성</button>
+    </form>
+    {% endif %} {% for reply in comment.replies.all %} {% if reply.parent_comment == comment %}
+    <li class="replies">▶️[답글]&nbsp;&nbsp;{{ reply.comment_body }}</li>
+    {% endif %} {% endfor %} {% endfor %}
+    <br />
+    <br />
+    <a class="listname" href="{% url 'list' %}">글 목록</a>
+    {% endblock %}
+</div>

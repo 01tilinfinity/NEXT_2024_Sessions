@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Counting Text</title>
+    </head>
+    <body>
+        <h2>글자를 입력해 봅시당</h2>
+        <form action="{% url 'result' %}" method="post">
+            {% csrf_token %}
+            <textarea name="text" cols="30" rows="10"></textarea>
+            <br />
+            <input type="submit" value="submit" />
+        </form>
+    </body>
+</html>

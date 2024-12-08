@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tab Display</title>
+        <link rel="stylesheet" href="./tab.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Moirai+One&family=Poor+Story&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="buttons">
+                <button id="tab1" onclick="displayText('tab1')">도</button>
+                <button id="tab2" onclick="displayText('tab2')">랄</button>
+                <button id="tab3" onclick="displayText('tab3')">팤</button>
+                <button id="tab4" onclick="displayText('tab4')">쥐</button>
+            </div>
+            <div class="display">
+                <p id="display-text"></p>
+            </div>
+        </div>
+        <script src="./tab.js"></script>
+    </body>
+</html>

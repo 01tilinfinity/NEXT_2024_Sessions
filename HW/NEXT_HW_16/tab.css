@@ -1,0 +1,75 @@
+.poor-story-regular {
+    font-family: 'Poor Story', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poor Story', system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+/* 수정된 부분 시작 */
+.buttons {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    font-family: 'Poor Story', system-ui;
+    flex: 1;
+    padding: 20px 0;
+    margin: 0;
+    border: none;
+    color: gray;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.active {
+    opacity: 0.8;
+}
+/* 수정된 부분 끝 */
+
+#tab1 {
+    background-color: coral;
+}
+
+#tab2 {
+    background-color: peachpuff;
+}
+
+#tab3 {
+    background-color: pink;
+}
+
+#tab4 {
+    background-color: palevioletred;
+}
+
+.display {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid plum; /* 수정된 부분 */
+    border-radius: 5px; /* 수정된 부분 */
+    background-color: #fff; /* 수정된 부분 */
+}

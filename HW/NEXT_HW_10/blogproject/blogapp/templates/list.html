@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block css %} {% load static %}<link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'list.css' %}"
+/>{% endblock css %} {% block title %}<title>Post list</title>{% endblock title %} {% block content %}
+<div class="container">
+    <div>
+        <h2 class="postlist">Post List</h2>
+        <ul style="list-style-type: square">
+            {% for article in articles %}
+            <li class="titles"><a href="{% url 'detail' article.id %}">{{article.title}}</a></li>
+            {% endfor %}
+        </ul>
+        <h3 class="new"><a href="{% url 'new' %}">새 글 쓰러가기</a></h3>
+        <div class="category">카테고리</div>
+        <ul style="list-style-type: square">
+            <li class="cnt">
+                <a class="titlename" href="{% url 'category' 'hobby' %}">취미🤪</a> <br />게시글 수 : {{ hp }}
+            </li>
+            <br />
+            <li class="cnt">
+                <a class="titlename" href="{% url 'category' 'food' %}">맛집🍔</a> <br />게시글 수 : {{ fp }}
+            </li>
+            <br />
+            <li class="cnt">
+                <a class="titlename" href="{% url 'category' 'programming' %}">프로그래밍💻</a>
+                <br />게시글 수 : {{ pc }}
+            </li>
+            <br />
+        </ul>
+    </div>
+</div>
+{% endblock %}

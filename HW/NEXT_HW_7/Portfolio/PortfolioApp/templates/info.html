@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-coding.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="{% static 'info.css' %}" />
+        <title>Yerang Kim</title>
+        <style>
+            .fontTest {
+                font-family: 'NanumGothicCodingLigature';
+                font-family: 'NanumGothicCodingLigatureBold';
+                font-family: 'NanumGothicCoding';
+                font-family: 'NanumGothicCodingBold';
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(118, 171, 174)">
+        <div class="total_box">
+            <div class="upper1">
+                <svg
+                    class="sniffet"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    fill="whitesmoke"
+                    class="bi bi-code-slash"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                    />
+                </svg>
+                <h1 class="title" style="color: whitesmoke">Yerang Sandy Kim</h1>
+                <h2 class="emoji">👩🏻‍💻</h2>
+                <h2 class="sogae" style="color: lightgoldenrodyellow">
+                    Developer. Interested in FE,BE and DL. Studying @KU, Korea, Seoul.
+                </h2>
+            </div>
+            <div class="upper2">
+                <a href="https://www.github.com/01tilinfinity" target="_blank">
+                    <button class="github_button" style="background-color: darkslategrey">github</button>
+                </a>
+                <a href="https://www.linkedin.com/in/%EC%98%88%EB%9E%91-%EA%B9%80-3a95a3288/" target="_blank">
+                    <button class="linkedin_button" style="background-color: darkslategrey">LinkedIn</button>
+                </a>
+            </div>
+            <div class="upper3">
+                <a class="menu1" href =" {% url 'project' %}" style="font-family: NanumGothicCoding;">Projects<a></a>
+                <a class="menu2" href =" {% url 'aboutme' %}" style="font-family: NanumGothicCoding;">About Me<a></a>
+                <a class="menu3" href =" {% url 'contact' %}" style="font-family: NanumGothicCoding;">Contact<a></a>
+            </div>
+        </div>
+    </body>
+</html>

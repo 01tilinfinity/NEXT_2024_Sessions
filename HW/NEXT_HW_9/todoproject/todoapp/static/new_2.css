@@ -1,0 +1,30 @@
+body {
+    background-color: darkslategray;
+}
+.orbit-regular {
+    font-family: 'Orbit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbit', sans-serif;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+.title,
+.description,
+.dday {
+    display: flex;
+    font-size: 30px;
+}
+.temp {
+    display: flex;
+    white-space: nowrap;
+}
+.btn-info {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}

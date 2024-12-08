@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400&display=swap');
+
+.ibm-plex-sans-kr-regular {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.app {
+    text-align: center;
+    margin: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #ffffff;
+    background-color: #2d5a4b;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.form-group label {
+    margin-right: 10px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.todo-form input,
+.todo-form select {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.todo-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: lightslategray;
+}
+
+.todo-item {
+    background-color: #feff9c;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.todo-details span {
+    display: block;
+    margin: 5px 0;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.todo-details button {
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.intro-text {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    margin-bottom: 10px;
+    color: mediumpurple;
+}

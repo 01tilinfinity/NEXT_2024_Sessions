@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text length counting result</title>
+    </head>
+    <body>
+        <p>글자 수(공백 포함):{{total_len}}</p>
+        <p>글자 수(공백 제외):{{nospace_len}}</p>
+        <p>단어 수:{{words_len}}</p>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(64, 64, 64);
+}
+.gaegu-regular {
+    font-family: 'Gaegu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px dotted whitesmoke;
+    font-family: 'Gaegu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.categoryname {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    color: lightblue;
+    margin-bottom: -30px;
+}
+.post_count {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 30px;
+    font: normal;
+    color: white;
+    margin-top: -10px;
+    margin-right: -20px;
+}
+.text_style {
+    font-family: 'Gaegu', sans-serif;
+    font: normal;
+    color: white;
+    font-size: 20px;
+}
+.lists {
+    font-family: 'Gaegu', sans-serif;
+    font: normal;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+.text_list {
+    font-family: 'Gaegu', sans-serif;
+    font: normal;
+    font-size: 20px;
+    color: white;
+    margin-top: 100px;
+}
